@@ -27,10 +27,9 @@ def exchange(currency_from, currency_to, amount_from):
    
     
 def test_exchange():
-    """测试在网站上用2.5 USD兑换EUR，ARS，JPY的结果
-    """
+    
     assert "2.1589225 Euros" == exchange("USD","EUR",2.5)
-    assert "2356.765097755 Argentine Peso" == exchange("USD","ARS",2.5)
+    assert "2356.765097755 Argentine Peso" == exchange("AED","ARS",2.5)
     assert "278.4975 Japanese Yen" == exchange("USD","JPY",2.5)       
         
 def main():
